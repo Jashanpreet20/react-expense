@@ -5,7 +5,9 @@ import ExpenseTitle from "./ExpenseTitle";
 import ExpenseLocation from "./ExpenseLocatoin";
 import Card from "../UI/Card";
 const ExpanseItem =(props)  =>{
-   
+  //  const handler=() =>{
+  //     console.log("clicked");
+  //  }
   return (
     <Card className="expense-item">
         <ExpenseDate date={props.date}></ExpenseDate>
@@ -13,6 +15,7 @@ const ExpanseItem =(props)  =>{
         <ExpenseTitle title={props.title}></ExpenseTitle>
         <ExpenseAmount amount={props.amount}></ExpenseAmount>
        <ExpenseLocation location={props.location}></ExpenseLocation>
+        <button  onClick={() =>{console.log('clicked')}}>change title</button>
       </div>
     </Card>
   );
